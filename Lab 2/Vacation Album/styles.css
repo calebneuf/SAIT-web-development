@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    padding: 10%;
+    background-image: linear-gradient(#f8e2c6, #c4f0f5);
+}
+
+.title {
+    text-align: center;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.left {
+    padding-left: 10%;
+}
+
+.right {
+}
+
+figure img { 
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1rem;
+}

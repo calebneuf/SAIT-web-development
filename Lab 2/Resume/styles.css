@@ -1,0 +1,155 @@
+@media all {
+    * {
+        box-sizing: border-box;
+        font-family: 'Roboto Mono', monospace;
+        color: white;
+    }
+
+
+    body {
+        /*
+        https://wallpaperaccess.com/full/3706097.png
+        */
+        margin: 0px;
+        padding: 10%;
+        background: rgba(0, 0, 0, 0.7) url(photos/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .header h1 {
+        margin-bottom: 5px;
+    }
+
+    .header h2 {
+        margin-top: 5px;
+        font-size: 1rem;
+        color: darkgrey;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .top {
+        margin-bottom: 100px;
+    }
+
+    .top img {
+        width: 60%;
+        box-shadow: -1px 10px 25px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -1px 10px 25px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 10px 25px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .work-experience h2 {
+        margin: auto;
+        font-weight: bold;
+    }
+
+    .work-experience .entries {
+        flex-wrap: wrap;
+        display: inline-flex;
+        padding: 5%;
+    }
+
+    .entry {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .entry .title {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .entry .job-title {
+        text-decoration: underline;
+    }
+
+    .entry .left {
+        float: left;
+    }
+
+    .entry .title .company {
+        font-size: 0.8rem;
+    }
+
+    .entry .date {
+        float: right;
+        color: whitesmoke;
+    }
+
+    .entry .responsibilities li {
+        list-style: none;
+    }
+
+    .entry .responsibilities li::before {
+        content: "> ";
+    }
+}
+
+
+
+@media print {
+    * {
+        font-family: sans-serif;
+        color: black;
+        background-color: white;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    h3 {
+        font-size: 1.0rem;
+    }
+
+    body {
+        background: transparent;
+    }
+
+    img {
+        display: none;
+    }
+
+    .profile-picture {
+        display: none;
+    }
+
+    .about-me {
+        width: 100%;
+    }
+
+    .work-experience h2 {
+        margin: inherit;
+    }
+
+    .entry .date {
+        font-size: 0.9rem;
+    }
+
+    .job-title {
+        font-size: 1.0rem;
+    }
+}
